@@ -34,11 +34,11 @@ class HomePage extends StatelessWidget {
             floating: false,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset("assets/images/banner_dark.png"),
+              background: Image.asset("assets/images/banner_dark.png", fit: BoxFit.cover),
             ),
             centerTitle: true,
             title: Text(
-              'Devfest Chennai',
+              'Flutter App',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
@@ -56,4 +56,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-

@@ -27,29 +27,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 flutter:
 
+  
+  uses-material-design: true
 
-uses-material-design: true
-
-assets:
-  - assets/images/
-  - assets/images/banner_dark.png
-
-fonts:
-  - family: Product_Sans
-    fonts:
-      - assets: assets/Product-Sans-Bold-Italic.ttf
-      - assets: assets/Product-Sans-Bold.ttf
-      - assets: assets/Product-Sans-Regular.ttf
-      - assets: assets/Product-Sans-Italic.ttf
-
-
-
-
-
-
-
-
-
+  
+  assets:
+   - assets/images/banner_dark.png

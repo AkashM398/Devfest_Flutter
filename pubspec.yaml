@@ -14,7 +14,7 @@ description: Flutter application for Devfest Chennai 2019
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -35,3 +35,4 @@ flutter:
   
   assets:
    - assets/images/banner_dark.png
+   - assets/images/banner_transparent.png

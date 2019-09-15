@@ -29,21 +29,23 @@ class HomePage extends StatelessWidget {
       backgroundColor: Color(0xFF121214),
       body: CustomScrollView(
         slivers: <Widget>[
+          
           SliverAppBar(
             expandedHeight: 350.0,
+            backgroundColor: Color(0xFF1F2124),
             floating: false,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset("assets/images/banner_dark.png", fit: BoxFit.cover),
-            ),
             centerTitle: true,
+            flexibleSpace: FlexibleSpaceBar(
+                      background: ProfileCard()),
             title: Text(
-              'Flutter App',
+              'Devfest Chennai',
               style: TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w700,
                 fontFamily: 'Product_Sans',
-                fontSize: 22,
+                fontSize: 25,
+                fontStyle: FontStyle.normal,
               ),
               ),
             shape: RoundedRectangleBorder(
@@ -54,5 +56,28 @@ class HomePage extends StatelessWidget {
           ),
         ],),
     );
+  }
+}
+
+class ProfileCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+        color: Color(0xFF1F2124),
+        shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
+        child: Container(
+          padding: EdgeInsets.only(top:100.0),
+          child: Column(
+            //crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset(
+                'assets/images/banner_dark.png',
+                height: 200,
+                width: 350,
+              ),
+            ],
+          ),
+        ));
   }
 }
